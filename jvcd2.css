@@ -1,4 +1,9 @@
+::root
+{
+    --p-color: red;
+}
+
 p
 {
-    color: red !important;
+    color: var(--p-color) !important;
 }
