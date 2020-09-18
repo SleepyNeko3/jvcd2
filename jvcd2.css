@@ -24,12 +24,11 @@
 /**** Variables */
 :root
 {
-    --jvcd-jvc-blue: #004365;
+    /*Couleurs Textes*/
     --jvcd-text-normal: #dcddde;
     --jvcd-text-muted: #72767d;
     --jvcd-text-white: white;
-    --jvcd-interactive-normal: #b9bbbe;
-    --jvcd-interactive-hover: #dcddde;
+    /*Couleurs de fonds*/
     --jvcd-background-primary: #36393f;
     --jvcd-background-secondary: #2f3136;
     --jvcd-background-tertiary: #202225;
@@ -37,9 +36,7 @@
     --jvcd-background-spoiler: #4a4d53;
     --jvcd-modal-header-background: #2f3136;
     --jvcd-modal-body-background: #36393f;
-    --jvcd-quote-border-left: #4f545c;
     --jvcd-spoiler-cover: #202225;
-    --jvcd-spoiler-background: hsla(0,0%,100%,.1);
     /*Couleurs des Boutons*/
     --jvcd-button-red: #f04747;
     --jvcd-button-red-hover: #d84040;
@@ -47,6 +44,10 @@
     --jvcd-button-orange-hover: #F16537;
     --jvcd-button-blue: #7ba1d3;
     --jvcd-button-blue-hover: #5d84b7;
+    /*Couleurs de décorations*/
+    --jvcd-interactive-normal: #b9bbbe;
+    --jvcd-interactive-hover: #dcddde;
+    --jvcd-quote-border-left: #4f545c;
     /*Risibank*/
     --jvcd-rb-scroller: rgba(24,25,28,.6);
     /*NoelShack*/
@@ -493,6 +494,105 @@ body,
 .nested-quote-toggle-box::after:hover
 {
     color: var(--jvcd-interactive-hover) !important;    
+}
+
+/**** Page Topic */
+.page-active
+{
+    border-radius: 3px !important;
+}
+
+.bloc-message-forum
+{
+    background: var(--jvcd-background-secondary) !important;
+    border: 0 !important;
+    border-radius: 10px;
+}
+
+.bloc-pseudo-msg
+{
+    color: var(--jvcd-text-normal) !important;
+    font-family: Whitney !important;
+    font-weight: 800 !important;
+}
+
+.back-img-msg
+{
+    background: transparent !important;
+    border: 0 !important;
+}
+
+.user-avatar-msg
+{
+    border-radius: 3px;
+}
+
+.bloc-header
+{
+    border-bottom: 0 !important;
+    margin-bottom: 0px !important;
+}
+
+.signature-msg
+{
+    border-top: 3px var(--jvcd-text-muted) solid !important;
+    margin-top: 0 !important;
+}
+
+.info-edition-msg
+{
+    margin-top: 5px !important;
+}
+
+/**** Intégration JVChat */
+.jvchat-bloc-avatar
+{
+    box-shadow: none !important;
+}
+
+.jvchat-author
+{
+    color: var(--jvcd-text-white) !important;
+    font-family: Whitney !important;
+    font-weight: 1000 !important;
+}
+
+.jvchat-ruler
+{
+    border-color: transparent !important;
+    margin-top: 15px !important;
+}
+
+.jvchat-reduced,
+#bloc-formulaire-forum
+{
+   margin-bottom: 10px !important; 
+}
+
+#jvchat-post,
+#jvchat-reduce,
+#jvchat-enlarge
+{
+    background: transparent;
+    border: none;
+    color: var(--jvcd-interactive-normal);
+}
+
+#jvchat-post:active,
+#jvchat-post:focus,
+#jvchat-reduce:active,
+#jvchat-reduce:focus,
+#jvchat-enlarge:active,
+#jvchat-enlarge:focus
+{
+    border: 0 !important;
+}
+
+#jvchat-post:hover,
+#jvchat-reduce:hover,
+#jvchat-enlarge:hover
+{
+    color: var(--jvcd-interactive-hover);
 }
 
 /**** Extras */
