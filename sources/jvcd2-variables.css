@@ -16,7 +16,8 @@
     /*Couleurs Textes*/
     --jvcd-text-normal: #dcddde;
     --jvcd-text-muted: #72767d;
-    --jvcd-text-bright: white;
+    --jvcd-text-bright: #FFF;
+    --jvcd-text-dark: #000;
     /*Couleurs de fonds*/
     --jvcd-background-primary: #36393f;
     --jvcd-background-secondary: #2f3136;

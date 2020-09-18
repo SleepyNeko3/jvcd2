@@ -27,7 +27,7 @@
     /*Couleurs Textes*/
     --jvcd-text-normal: #dcddde;
     --jvcd-text-muted: #72767d;
-    --jvcd-text-white: white;
+    --jvcd-text-bright: white;
     /*Couleurs de fonds*/
     --jvcd-background-primary: #36393f;
     --jvcd-background-secondary: #2f3136;
@@ -375,7 +375,7 @@ body,
 {
     border-radius: 3px !important;
     border: 0 !important;
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
     text-transform: none;
     transition: background-color .17s ease,color .17s ease;
     background-color: var(--jvcd-button-orange) !important;
@@ -383,7 +383,7 @@ body,
 
 .btn-poster-msg:hover
 {
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
     background-color: var(--jvcd-button-orange-hover) !important;
 }
 
@@ -395,7 +395,7 @@ body,
 .btn-sondage-forum,
 .btn-topic-resolu
 {
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
     box-shadow: none !important;
     border-radius: 3px !important;
     border: 0 !important;
@@ -418,7 +418,7 @@ body,
 .btn-topic-resolu:active,
 .btn-topic-resolu:focus
 {
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
 }
 
 .pagi-suivant-actif,
@@ -631,7 +631,7 @@ body,
 
 .jvchat-author
 {
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
     font-family: Whitney !important;
     font-weight: 1000 !important;
 }
@@ -869,7 +869,7 @@ span.topic-author,
 
 .lien-profil.actif
 {
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
 }
 
 .lien-profil.actif::after
@@ -879,7 +879,7 @@ span.topic-author,
 
 .lien-profil.actif::before
 {
-    background: var(--jvcd-text-white) !important;
+    background: var(--jvcd-text-bright) !important;
     bottom: .5rem !important;
 }
 

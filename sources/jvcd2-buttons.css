@@ -39,7 +39,7 @@
 {
     border-radius: 3px !important;
     border: 0 !important;
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
     text-transform: none;
     transition: background-color .17s ease,color .17s ease;
     background-color: var(--jvcd-button-orange) !important;
@@ -47,7 +47,7 @@
 
 .btn-poster-msg:hover
 {
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
     background-color: var(--jvcd-button-orange-hover) !important;
 }
 
@@ -58,7 +58,7 @@
 .btn-sondage-forum,
 .btn-topic-resolu
 {
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
     box-shadow: none !important;
     border-radius: 3px !important;
     border: 0 !important;
@@ -81,7 +81,7 @@
 .btn-topic-resolu:active,
 .btn-topic-resolu:focus
 {
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
 }
 
 .pagi-suivant-actif,

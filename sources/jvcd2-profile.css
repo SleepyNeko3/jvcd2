@@ -74,7 +74,7 @@
 
 .lien-profil.actif
 {
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
 }
 
 .lien-profil.actif::after
@@ -84,7 +84,7 @@
 
 .lien-profil.actif::before
 {
-    background: var(--jvcd-text-white) !important;
+    background: var(--jvcd-text-bright) !important;
     bottom: .5rem !important;
 }
 

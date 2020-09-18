@@ -128,7 +128,7 @@
 
 .jvchat-author
 {
-    color: var(--jvcd-text-white) !important;
+    color: var(--jvcd-text-bright) !important;
     font-family: Whitney !important;
     font-weight: 1000 !important;
 }
