@@ -44,6 +44,8 @@
     --jvcd-button-orange-hover: #F16537;
     --jvcd-button-blue: #7ba1d3;
     --jvcd-button-blue-hover: #5d84b7;
+    --jvcd-button-gray: #6c7984;
+    --jvcd-button-gray-hover: #424a51;
     /*Couleurs de décorations*/
     --jvcd-interactive-normal: #b9bbbe;
     --jvcd-interactive-hover: #dcddde;
@@ -426,6 +428,11 @@ body,
     transition: background-color .17s ease,color .17s ease;
 }
 
+.btn-sondage-forum:hover
+{
+    background: var(--jvcd-button-gray-hover) !important;
+}
+
 /**** Rendu des messages */
 .text-enrichi-forum
 {
@@ -497,6 +504,69 @@ body,
 }
 
 /**** Page Topic */
+.bloc-sondage
+{
+    background: var(--jvcd-background-secondary) !important;
+    border-radius: 10px;
+    font-family: Whitney;
+}
+
+.intitule-sondage
+{
+    margin-bottom: 5px !important;
+}
+
+.btn-sondage-reponse
+{
+    font-size: 14px;
+    background-position-y: center !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    padding-right: 10px !important;
+    border-radius: 3px !important;
+    transition: background-color 0.2s ease;
+}
+
+.btn-sondage-reponse:hover
+{
+    background-color: var(--jvcd-button-orange) !important;
+}
+
+.reponse
+{
+    padding: .5rem !important;
+    padding-top: .3rem !important;
+    font-size: 14px !important;
+}
+
+
+.titre-head-bloc-sondage,
+.pied-result
+{
+    border: 0 !important;
+}
+
+.pied-result
+{
+    margin-top: 0 !important;
+    padding-top: 5px !important;
+    font-size: 16px !important;
+    font-weight: 1000 !important;
+}
+
+.pourcent
+{
+    background: transparent !important;
+    position: absolute;
+}
+
+.back-barre,
+.back-barre span
+{
+    height: 1.2rem !important;
+    border-radius: 3px;
+}
+
 .page-active
 {
     border-radius: 3px !important;
