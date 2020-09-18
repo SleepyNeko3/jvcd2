@@ -1,5 +1,5 @@
 /*                                           
-**    By SleepyNeko3                   .-''-.     
+**    Par SleepyNeko3                   .-''-.     
 **                                   .' .-.  )    
 **    Une version remplacée         / .'  / /     
 **    de JVCD un theme Discord     (_/   / /      
@@ -10,17 +10,21 @@
 ** _   | | \ \/ /| |    | |  | |   .' '  _.'.-''  
 **| |__| |  \  / | |____| |__| |  /  /.-'_.'      
 ** \____/    \/   \_____|_____/  /    _.'         
-**                              ( _.-'             
+**                              ( _.-'
+**    Merci aux contributeurs :
 */
 
 /**** Ressources externes */
+@font-face{
+    font-family: Whitney;
+    font-weight: 300;
+    src: url(https://sleepyneko3.github.io/jvcd2/fonts/whitney.woff) format("woff");
+}
 
 /**** Variables */
 :root
 {
-    --jvcd-jvc-orange: #fd612c;
-    --jvcd-jvc-orange-muted: #F16537;
-    --jvcd-jvc-blue: darkcyan;
+    --jvcd-jvc-blue: #004365;
     --jvcd-text-normal: #dcddde;
     --jvcd-text-muted: #72767d;
     --jvcd-text-white: white;
@@ -30,12 +34,19 @@
     --jvcd-background-secondary: #2f3136;
     --jvcd-background-tertiary: #202225;
     --jvcd-background-textarea: #40444b;
-    --jvcd-button-red: #f04747;
-    --jvcd-button-red-hover: #d84040;
+    --jvcd-background-spoiler: #4a4d53;
     --jvcd-modal-header-background: #2f3136;
     --jvcd-modal-body-background: #36393f;
+    --jvcd-quote-border-left: #4f545c;
     --jvcd-spoiler-cover: #202225;
     --jvcd-spoiler-background: hsla(0,0%,100%,.1);
+    /*Couleurs des Boutons*/
+    --jvcd-button-red: #f04747;
+    --jvcd-button-red-hover: #d84040;
+    --jvcd-button-orange: #fd612c;
+    --jvcd-button-orange-hover: #F16537;
+    --jvcd-button-blue: #7ba1d3;
+    --jvcd-button-blue-hover: #5d84b7;
     /*Risibank*/
     --jvcd-rb-scroller: rgba(24,25,28,.6);
     /*NoelShack*/
@@ -47,7 +58,7 @@
 
 /**** Arrière Plans */
 body,
-#content,
+#content:not([style]),
 .container-content
 {
     background: var(--jvcd-background-primary) !important;
@@ -56,6 +67,7 @@ body,
 /**** Page d'accueil (La liste des topics possède sa propre section) */
 .titre-head-bloc
 {
+    margin: 0;
     padding-top: 0;
     border-top: none;
 }
@@ -72,11 +84,76 @@ body,
     display: none;
 }
 
+.form-control
+{
+    border: 0 !important;
+    border-radius: 8px !important;
+    background: var(--jvcd-background-textarea) !important;
+    color: var(--jvcd-text-normal) !important;
+}
+
+.form-control::placeholder
+{
+    color: var(--jvcd-text-muted) !important;
+}
+
+.btn-ajouter-sondage
+{
+    background-color: var(--jvcd-button-blue);
+    border: #0000 !important;
+    border-radius: 5px;
+    line-height: 1.5em;
+    text-transform: none;
+    transition: background-color .17s ease,color .17s ease;
+}
+
+.btn-ajouter-sondage:hover
+{
+    background: var(--jvcd-button-blue-hover) !important;
+}
+
+.btn-supprimer-sondage
+{
+    transition: background-color .17s ease,color .17s ease;
+    line-height: 1.5em;
+    background: var(--jvcd-button-red);
+    border: #0000 !important;
+    border-radius: 5px;
+    text-transform: none;
+}
+
+.btn-supprimer-sondage:hover
+{
+    background: var(--jvcd-button-red-hover);
+}
+
+.icon-cancel-circle:hover
+{
+    color: var(--jvcd-button-red-hover) !important;
+}
+
+.href-ajouter-reponse
+{
+    color: var(--jvcd-interactive-normal);
+    padding-left: 10px;
+}
+
+.href-ajouter-reponse:hover
+{
+    color: var(--jvcd-interactive-hover);
+}
+
+.hr-separated-dashed
+{
+    display: none;
+}
+
 /**** Barre de recherche forum */
 .bloc-rech-forum
 {
     text-align: right;
     background: transparent;
+    padding-right: 0px !important;
 }
 
 .btn-lancer-rech,
@@ -153,6 +230,12 @@ body,
 }
 
 /**** Colonne de droite */
+.panel-heading,
+.titre-info-fofo
+{
+    text-transform: none !important;
+}
+
 .panel-jv-forum .panel-heading
 {
     border-radius: 10px 10px 0 0;
@@ -250,7 +333,8 @@ body,
 }
 
 
-#message_topic
+#message_topic,
+#message
 {
     color: var(--jvcd-text-normal) !important;
     min-height: 100px;
@@ -269,7 +353,8 @@ body,
     background-color: var(--jvcd-background-textarea) !important;
 }
 
-#message_topic::placeholder
+#message_topic::placeholder,
+#message::placeholder
 {
     color: var(--jvcd-text-muted) !important;
     opacity: 1;
@@ -288,13 +373,13 @@ body,
     color: var(--jvcd-text-white) !important;
     text-transform: none;
     transition: background-color .17s ease,color .17s ease;
-    background-color: var(--jvcd-jvc-orange) !important;
+    background-color: var(--jvcd-button-orange) !important;
 }
 
 .btn-poster-msg:hover
 {
     color: var(--jvcd-text-white) !important;
-    background-color: var(--jvcd-jvc-orange-muted) !important;
+    background-color: var(--jvcd-button-orange-hover) !important;
 }
 
 /**** Boutons */
@@ -305,7 +390,109 @@ body,
 .btn-sondage-forum,
 .btn-topic-resolu
 {
-    /*placeholder*/
+    color: var(--jvcd-text-white) !important;
+    box-shadow: none !important;
+    border-radius: 3px !important;
+    border: 0 !important;
+    text-transform: none !important;
+    font-family: Whitney !important;
+    font-size: 13.5px !important;
+    transition: background-color .17s ease,color .17s ease;
+}
+
+.btn-actu-new-list-forum:active,
+.btn-actu-new-list-forum:focus,
+.btn-forum-modo:active,
+.btn-forum-modo:focus,
+.btn-repondre-msg:active,
+.btn-repondre-msg:focus,
+.btn-select-msg-modo:active,
+.btn-select-msg-modo:focus,
+.btn-sondage-forum:active,
+.btn-sondage-forum:focus,
+.btn-topic-resolu:active,
+.btn-topic-resolu:focus
+{
+    color: var(--jvcd-text-white) !important;
+}
+
+.pagi-suivant-actif,
+.pagi-precedent-actif,
+.pagi-fin-actif,
+.pagi-debut-actif
+{
+    border-radius: 3px !important;
+    transition: background-color .17s ease,color .17s ease;
+}
+
+/**** Rendu des messages */
+.text-enrichi-forum
+{
+    color: var(--jvcd-text-normal) !important;
+    font-family: Whitney;
+    font-size: 14px;
+}
+
+.code-jv
+{
+    color: var(--jvcd-text-normal) !important;
+    background-color: var(--jvcd-background-secondary) !important;
+    border-radius: 3px !important;
+    font-family: Consolas,Menlo,Monaco,Courier New,monospace !important;
+}
+
+.pre-jv
+{
+    background-color: var(--jvcd-background-secondary) !important;
+    border-radius: 4px !important;
+    border-color: var(--jvcd-background-tertiary) !important;
+}
+
+.txt-spoil
+{
+    background: var(--jvcd-background-tertiary) !important;
+    font-family: Whitney;
+    border-radius: 3px;
+}
+
+.contenu-spoil
+{
+    background: var(--jvcd-background-spoiler) !important;
+    border-radius: 3px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border: 0 !important;
+}
+
+.aff-spoil,
+.masq-spoil
+{
+    display: none !important;
+}
+
+.blockquote-jv
+{
+    background: var(--jvcd-background-tertiary) !important;
+    border-radius: 3px;
+    border-left-color: var(--jvcd-quote-border-left) !important;
+    color: var(--jvcd-text-normal) !important;
+}
+
+.nested-quote-toggle-box::before
+{
+    display: none;
+}
+
+.nested-quote-toggle-box::after
+{
+    background-color: transparent !important;
+    border: 0 !important;
+    color: var(--jvcd-interactive-normal) !important;
+}
+
+.nested-quote-toggle-box::after:hover
+{
+    color: var(--jvcd-interactive-hover) !important;    
 }
 
 /**** Extras */
@@ -313,9 +500,34 @@ body,
 #totalblacklistbar,
 .sideWootbox,
 .form-harassment, /*:noel:*/
+.bloc-harassment-login,
+.jv-nav-harassment-warning,
 .video-footer-container,
 .external-links,
-.highlight
+div.highlight
 {
     display: none !important;
+}
+
+.jv-nav-dropdown-container-content
+{
+    bottom: 3.5rem !important;
+}
+
+/*Fix du footer sur le login */
+.container-content
+{
+    min-height: 38.4rem !important;
+}
+
+/* Fix de l'icone de notification wtf ? */
+.icon-bell-off
+{
+    background-color: #00000030 !important;
+    color: var(--jvcd-background-primary) !important;
+}
+
+.icon-bell-off:hover
+{
+    background-color: #000000F0 !important;
 }
