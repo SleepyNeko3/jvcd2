@@ -1,0 +1,24 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier est nécessaire au bon fonctionnement de JVCD2
+** Ce fichier fait le lien entre tous les fichiers de plugin.
+** Il ne doit être appellé que dans jvcd2-install.css
+*/
+
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-extrnal.css");    /*Ressources Externes*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-variables.css");  /*Généralisation des variables*/
+/* Mettre les plugins en dessous */
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-backgrounds.css");/*Arrière plans*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-topiclist.css");  /*Liste des topics*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-topic.css");      /*Topic*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-right-col.css");  /*Colonne de droite*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-renderer.css");   /*Rendu des messages*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-profile.css");    /*Profils utilisateur*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-login.css");      /*Page de login*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-general.css");    /*General styles*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-forum.css");      /*Forum*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-extra.css");      /*Extras*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-editor.css");     /*Post Editor*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-buttons.css");    /*Buttons*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-410.css");        /*410*/

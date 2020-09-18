@@ -1,0 +1,26 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Définit le style de la colonne de droite.
+*/
+
+.panel-heading,
+.titre-info-fofo
+{
+    text-transform: none !important;
+}
+
+.panel-jv-forum .panel-heading
+{
+    border-radius: 10px 10px 0 0;
+    background: var(--jvcd-background-tertiary) !important;
+    color: var(--jvcd-text-normal) !important;
+}
+
+.panel-jv-forum
+{
+    border-radius: 10px;
+    background: var(--jvcd-background-secondary) !important;
+    color: var(--jvcd-text-normal) !important;
+}

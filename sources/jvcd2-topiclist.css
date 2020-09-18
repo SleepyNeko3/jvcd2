@@ -1,0 +1,58 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Définit le style de la liste des topics
+*/
+
+.topic-list
+{
+    background: var(--jvcd-background-secondary);
+    border-radius: 20px;
+    border: #0000 !important;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#select-all-msg
+{
+    display: none;
+}
+
+.topic-list .topic-head,
+.topic-head .topic-author
+{
+    background: var(--jvcd-background-secondary) !important;
+}
+
+span.topic-author,
+.topic-author.text-user
+{
+    color: var(--jvcd-text-normal) !important;
+}
+
+.topic-list li:nth-of-type(2n)
+{
+    background: var(--jvcd-background-secondary);
+    color: var(--jvcd-text-normal);
+    font-family: Whitney;
+    font-size: 13px !important;
+}
+
+.topic-list li:nth-of-type(2n+1)
+{
+    background: var(--jvcd-background-tertiary);
+    color: var(--jvcd-text-normal);
+    font-family: Whitney;
+    font-size: 13px !important;
+}
+
+.topic-date a
+{
+    color: var(--text-link);
+}
+
+.lien-jv.topic-title
+{
+    color: var(--text-normal);
+}

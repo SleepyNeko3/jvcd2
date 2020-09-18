@@ -1,0 +1,52 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier est nécessaire au bon fonctionnement de JVCD2
+** Toutes les variables doivent être déclarées ici.
+** Si vous devez utiliser une couleur mais que la variable 
+** a une autre utilité sans relation avec votre besoin,
+** par exemple utiliser --jvcd-text-muted pour un arrière plan, 
+** vous devez créer une nouvelle variable avec un nom adéquat.
+** Cela permettra d'éviter des problèmes de couleurs lors de modifications
+** par l'utilisateur ou pour une future correction.
+*/
+
+:root
+{
+    /*Couleurs Textes*/
+    --jvcd-text-normal: #dcddde;
+    --jvcd-text-muted: #72767d;
+    --jvcd-text-bright: white;
+    /*Couleurs de fonds*/
+    --jvcd-background-primary: #36393f;
+    --jvcd-background-secondary: #2f3136;
+    --jvcd-background-tertiary: #202225;
+    --jvcd-background-textarea: #40444b;
+    --jvcd-background-spoiler: #4a4d53;
+    --jvcd-modal-header-background: #2f3136;
+    --jvcd-modal-body-background: #36393f;
+    --jvcd-spoiler-cover: #202225;
+    /*Couleurs des Boutons*/
+    --jvcd-button-red: #f04747;
+    --jvcd-button-red-hover: #d84040;
+    --jvcd-button-green: #43B581;
+    --jvcd-button-green-hover: #3ca374;
+    --jvcd-button-orange: #fd612c;
+    --jvcd-button-orange-hover: #F16537;
+    --jvcd-button-blue: #7ba1d3;
+    --jvcd-button-blue-hover: #5d84b7;
+    --jvcd-button-gray: #6c7984;
+    --jvcd-button-gray-hover: #424a51;
+    /*Couleurs de décorations*/
+    --jvcd-interactive-normal: #b9bbbe;
+    --jvcd-interactive-hover: #dcddde;
+    --jvcd-signature-delimiter: #72767d;
+    --jvcd-quote-border-left: #4f545c;
+    /*Risibank*/
+    --jvcd-rb-scroller: rgba(24,25,28,.6);
+    /*NoelShack*/
+    --jvcd-ns-button-red: #CC1D17;
+    --jvcd-ns-button-red-hover: #C51613;
+    --jvcd-ns-button-yellow: #FDDE02;
+    --jvcd-ns-button-yellow-hover: #FEE952;
+}

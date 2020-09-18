@@ -1,0 +1,20 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Définit le style des éléments récurrent sur plusieurs pages
+** tels que des zones de texte.
+*/
+
+.form-control
+{
+    border: 0 !important;
+    border-radius: 8px !important;
+    background: var(--jvcd-background-textarea) !important;
+    color: var(--jvcd-text-normal) !important;
+}
+
+.form-control::placeholder
+{
+    color: var(--jvcd-text-muted) !important;
+}

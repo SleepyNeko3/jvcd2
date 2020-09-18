@@ -1,0 +1,29 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Définit le style des éléments propres à la page de login
+*/
+
+.bloc-erreur
+{
+    border: 0 !important;
+    font-family: Whitney;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.icon-user,
+.icon-lock
+{
+    color: var(--jvcd-text-muted) !important;
+}
+
+.form-control:focus
+{
+    box-shadow: none;
+}
+
+.bloc-pass-perdu > a
+{
+    float: left !important;
+}

@@ -1,0 +1,128 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Ici sont définis les styles tous les boutons ayant du texte à l'intérieur.
+*/
+
+.btn-ajouter-sondage
+{
+    background-color: var(--jvcd-button-blue);
+    border: #0000 !important;
+    border-radius: 5px;
+    line-height: 1.5em;
+    text-transform: none;
+    transition: background-color .17s ease,color .17s ease;
+}
+
+.btn-ajouter-sondage:hover
+{
+    background: var(--jvcd-button-blue-hover) !important;
+}
+
+.btn-supprimer-sondage
+{
+    transition: background-color .17s ease,color .17s ease;
+    line-height: 1.5em;
+    background: var(--jvcd-button-red);
+    border: #0000 !important;
+    border-radius: 5px;
+    text-transform: none;
+}
+
+.btn-supprimer-sondage:hover
+{
+    background: var(--jvcd-button-red-hover);
+}
+
+.btn-poster-msg
+{
+    border-radius: 3px !important;
+    border: 0 !important;
+    color: var(--jvcd-text-white) !important;
+    text-transform: none;
+    transition: background-color .17s ease,color .17s ease;
+    background-color: var(--jvcd-button-orange) !important;
+}
+
+.btn-poster-msg:hover
+{
+    color: var(--jvcd-text-white) !important;
+    background-color: var(--jvcd-button-orange-hover) !important;
+}
+
+.btn-actu-new-list-forum,
+.btn-forum-modo,
+.btn-repondre-msg,
+.btn-select-msg-modo,
+.btn-sondage-forum,
+.btn-topic-resolu
+{
+    color: var(--jvcd-text-white) !important;
+    box-shadow: none !important;
+    border-radius: 3px !important;
+    border: 0 !important;
+    text-transform: none !important;
+    font-family: Whitney !important;
+    font-size: 13.5px !important;
+    transition: background-color .17s ease,color .17s ease;
+}
+
+.btn-actu-new-list-forum:active,
+.btn-actu-new-list-forum:focus,
+.btn-forum-modo:active,
+.btn-forum-modo:focus,
+.btn-repondre-msg:active,
+.btn-repondre-msg:focus,
+.btn-select-msg-modo:active,
+.btn-select-msg-modo:focus,
+.btn-sondage-forum:active,
+.btn-sondage-forum:focus,
+.btn-topic-resolu:active,
+.btn-topic-resolu:focus
+{
+    color: var(--jvcd-text-white) !important;
+}
+
+.pagi-suivant-actif,
+.pagi-precedent-actif,
+.pagi-fin-actif,
+.pagi-debut-actif
+{
+    border-radius: 3px !important;
+    transition: background-color .17s ease,color .17s ease;
+}
+
+.btn-sondage-forum:hover
+{
+    background: var(--jvcd-button-gray-hover) !important;
+}
+
+.btn-valid-form
+{
+    text-transform: lowercase !important;
+    background: var(--jvcd-button-green) !important;
+    border-radius: 3px !important;
+    font-family: Whitney;
+    font-size: 16px;
+}
+
+.btn-valid-form:active
+{
+    box-shadow: none !important;
+}
+
+.btn-valid-form:hover
+{
+    background: var(--jvcd-button-green-hover) !important;
+}
+
+.icon-check-jv
+{
+    display: none;
+}
+
+.btn-valid-form::first-letter
+{
+    text-transform: uppercase !important;
+}

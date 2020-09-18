@@ -1,0 +1,128 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Définit le style des éléments propres à la page listant les topics d'un forum.
+** Elle ne comprends pas : les boutons "Nouveau Sujet" etc, la colonne de droite, l'éditeur de post.
+** Elle inclut cependant : La barre de saisie du titre d'un topic et le bouton sondage
+*/
+
+.titre-head-bloc
+{
+    margin: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.bloc-outils-top
+{
+    margin-bottom: 8px;
+    padding-bottom: 0 !important;
+    border: transparent !important;
+}
+
+.conteneur-topic-pagi .bloc-pagi-default:nth-child(1)
+{
+    display: none;
+}
+
+.icon-cancel-circle:hover
+{
+    color: var(--jvcd-button-red-hover) !important;
+}
+
+.href-ajouter-reponse
+{
+    color: var(--jvcd-interactive-normal);
+    padding-left: 10px;
+}
+
+.href-ajouter-reponse:hover
+{
+    color: var(--jvcd-interactive-hover);
+}
+
+.hr-separated-dashed
+{
+    display: none;
+}
+
+.bloc-rech-forum
+{
+    text-align: right;
+    background: transparent;
+    padding-right: 0px !important;
+}
+
+.btn-lancer-rech,
+.select-search,
+.txt-search
+{
+    background: var(--jvcd-background-tertiary) !important;
+    border-color: var(--jvcd-background-tertiary) !important;
+}
+
+.btn-lancer-rech,
+.select-search,
+.txt-search::placeholder
+{
+    color: var(--jvcd-text-muted) !important;
+    opacity: 1;
+}
+
+.txt-search
+{
+    color: var(--jvcd-text-normal) !important;
+    margin: 0 !important;
+    border-radius: 5px 0px 0px 5px;
+    border: white !important;
+    border-right: transparent !important;
+    padding-left: 6px !important;
+}
+
+.select-search
+{
+    margin: 0 !important;      
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    border-radius: 0 !important;
+}
+
+.select-search {
+    background-image:
+        linear-gradient(45deg, transparent 50%, var(--jvcd-text-muted) 50%),
+        linear-gradient(135deg, var(--jvcd-text-muted) 50%, transparent 50%) !important;
+     background-position:
+        calc(100% - 20px) calc(1em + 0px),
+        calc(100% - 15px) calc(1em + 0px) !important;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em !important;
+    background-repeat: no-repeat !important;
+}
+
+.select-search:focus {
+    background-image:
+        linear-gradient(45deg, var(--jvcd-text-muted) 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, var(--jvcd-text-muted) 50%) !important;
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em !important;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat !important;
+    outline: 0 !important;
+}
+
+.btn-lancer-rech
+{
+    margin: 0;
+    border-radius: 0px 5px 5px 0px !important;
+    border-left: transparent;
+}

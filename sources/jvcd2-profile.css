@@ -1,0 +1,99 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Définit le style des profils utilisateurs
+*/
+
+#header-profil
+{
+    height: 9.45rem !important;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    background: var(--jvcd-background-tertiary) !important;
+}
+
+.content-img-avatar
+{
+    background: transparent !important;
+    border: 0 !important;
+}
+
+.content-img-avatar div
+{
+    padding: 1rem !important;
+}
+.content-img-avatar div img
+{
+    border-radius: 50%;
+    height: 100px;
+}
+
+.infos-pseudo
+{
+    margin-top: 3rem !important;
+}
+
+.bloc-option-profil
+{
+    margin-top: 3.5rem !important;
+    margin-right: 3rem;
+}
+
+#page-profil .container
+{
+    padding-top: 5px !important;
+    padding: 0;
+}
+
+.menu-profil
+{
+    margin-left: 0 !important;
+    background: var(--jvcd-background-tertiary) !important;
+    padding-left: 15px !important;
+    border: 0 !important;
+}
+
+.lien-profil
+{
+    font-family: Whitney !important;
+    font-weight: 1000 !important;
+    text-transform: none !important;
+    font-size: 16px !important;
+}
+
+.lien-profil:hover
+{
+    color: var(--jvcd-interactive-normal) !important;
+}
+
+.list-menu-profil li
+{
+    margin-right: 20px !important;
+}
+
+.lien-profil.actif
+{
+    color: var(--jvcd-text-white) !important;
+}
+
+.lien-profil.actif::after
+{
+    color: transparent;
+}
+
+.lien-profil.actif::before
+{
+    background: var(--jvcd-text-white) !important;
+    bottom: .5rem !important;
+}
+
+.reglages-profil
+{
+    right: 10px !important;
+}
+
+.picto-crayon
+{
+    background-color: white !important;
+}

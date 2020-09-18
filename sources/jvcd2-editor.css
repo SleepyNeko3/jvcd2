@@ -1,0 +1,122 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Définit le style des éditeurs de texte.
+*/
+
+.btn-group
+{
+    background: transparent !important;
+    border:  transparent !important;
+}
+
+.btn-jv-editor-toolbar
+{
+    color: var(--jvcd-interactive-normal) !important;
+    border-radius: 5px !important;
+}
+
+.btn-jv-editor-toolbar:active,
+.btn-jv-editor-toolbar:focus
+{
+    background-color: var(--jvcd-background-textarea) !important;
+    box-shadow: none !important;
+}
+
+.btn-jv-editor-toolbar:hover
+{
+    color: var(--jvcd-interactive-hover) !important;
+}
+
+#risi-recherche
+{
+    color: var(--jvcd-text-normal) !important;
+}
+
+#risi-recherche::placeholder,
+#risi-rlogo
+{
+    color: var(--jvcd-text-muted);
+    opacity: 1;
+}
+
+.risi-tab:hover
+{
+    cursor: unset !important;
+    background: transparent !important;
+}
+
+
+#risi-rtab,
+#risi-rlogo
+{
+    background: var(--jvcd-background-tertiary) !important;
+    border: transparent !important;
+}
+
+#risi-setting,
+#risi-random
+{
+    border: transparent !important;
+}
+
+.label-previsu,
+.risi-smitem
+{
+    color: var(--jvcd-interactive-normal) !important;
+}
+
+.risi-smitem:hover,
+.risi-smitemactif
+{
+    color: var(--jvcd-interactive-hover) !important;
+}
+
+.conteneur-editor,
+#f-fstk,
+.f-top,
+.f-tabs-w,
+.f-tabs-r,
+.text-editor,
+.area-editor,
+.f-mid
+{
+    border: 0 !important;
+    background-color: var(--jvcd-background-textarea) !important;
+}
+
+
+#message_topic,
+#message
+{
+    color: var(--jvcd-text-normal) !important;
+    min-height: 100px;
+}
+
+.conteneur-editor
+{
+    padding: 5px !important;
+}
+
+#message_topic,
+.conteneur-editor
+{
+    border: none !important;
+    border-radius: 8px;
+    background-color: var(--jvcd-background-textarea) !important;
+}
+
+#message_topic::placeholder,
+#message::placeholder
+{
+    color: var(--jvcd-text-muted) !important;
+    opacity: 1;
+}
+
+.previsu-editor
+{
+    background-color: var(--jvcd-background-primary) !important;
+    border-radius: 8px;
+}
+

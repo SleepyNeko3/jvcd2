@@ -1,0 +1,75 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Définit le style des éléments des posts
+*/
+
+.text-enrichi-forum
+{
+    color: var(--jvcd-text-normal) !important;
+    font-family: Whitney;
+    font-size: 14px;
+}
+
+.code-jv
+{
+    color: var(--jvcd-text-normal) !important;
+    background-color: var(--jvcd-background-secondary) !important;
+    border-radius: 3px !important;
+    font-family: Consolas,Menlo,Monaco,Courier New,monospace !important;
+}
+
+.pre-jv
+{
+    background-color: var(--jvcd-background-secondary) !important;
+    border-radius: 4px !important;
+    border-color: var(--jvcd-background-tertiary) !important;
+}
+
+.txt-spoil
+{
+    background: var(--jvcd-background-tertiary) !important;
+    font-family: Whitney;
+    border-radius: 3px;
+}
+
+.contenu-spoil
+{
+    background: var(--jvcd-background-spoiler) !important;
+    border-radius: 3px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border: 0 !important;
+}
+
+.aff-spoil,
+.masq-spoil
+{
+    display: none !important;
+}
+
+.blockquote-jv
+{
+    background: var(--jvcd-background-tertiary) !important;
+    border-radius: 3px;
+    border-left-color: var(--jvcd-quote-border-left) !important;
+    color: var(--jvcd-text-normal) !important;
+}
+
+.nested-quote-toggle-box::before
+{
+    display: none;
+}
+
+.nested-quote-toggle-box::after
+{
+    background-color: transparent !important;
+    border: 0 !important;
+    color: var(--jvcd-interactive-normal) !important;
+}
+
+.nested-quote-toggle-box::after:hover
+{
+    color: var(--jvcd-interactive-hover) !important;    
+}

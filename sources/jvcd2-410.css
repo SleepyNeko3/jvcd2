@@ -1,0 +1,11 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Définit le style du 410
+*/
+
+.text-center
+{
+    color: var(--jvcd-text-normal);
+}

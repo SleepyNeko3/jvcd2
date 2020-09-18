@@ -1,0 +1,12 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier est nécessaire au bon fonctionnement de JVCD2
+** Veuillez mettre ici toutes les requêtes à des ressources externes.
+*/
+
+@font-face{
+    font-family: Whitney;
+    font-weight: 300;
+    src: url(https://sleepyneko3.github.io/jvcd2/fonts/whitney.woff) format("woff");
+}

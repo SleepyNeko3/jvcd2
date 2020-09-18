@@ -1,0 +1,172 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Définit le style des éléments propres aux topics
+*/
+
+.bloc-sondage
+{
+    background: var(--jvcd-background-secondary) !important;
+    border-radius: 10px;
+    font-family: Whitney;
+}
+
+.intitule-sondage
+{
+    margin-bottom: 5px !important;
+}
+
+.btn-sondage-reponse
+{
+    font-size: 14px;
+    background-position-y: center !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    padding-right: 10px !important;
+    border-radius: 3px !important;
+    transition: background 0.2s ease;
+}
+
+.btn-sondage-reponse:hover
+{
+    background: var(--jvcd-button-orange) !important;
+}
+
+.reponse
+{
+    padding: .5rem !important;
+    padding-top: .3rem !important;
+    font-size: 14px !important;
+}
+
+
+.titre-head-bloc-sondage,
+.pied-result
+{
+    border: 0 !important;
+}
+
+.pied-result
+{
+    margin-top: 0 !important;
+    padding-top: 5px !important;
+    font-size: 16px !important;
+    font-weight: 1000 !important;
+}
+
+.pourcent
+{
+    background: transparent !important;
+    position: absolute;
+}
+
+.back-barre,
+.back-barre span
+{
+    height: 1.2rem !important;
+    border-radius: 3px;
+}
+
+.page-active
+{
+    border-radius: 3px !important;
+}
+
+.bloc-message-forum
+{
+    background: var(--jvcd-background-secondary) !important;
+    border: 0 !important;
+    border-radius: 10px;
+}
+
+.bloc-pseudo-msg
+{
+    color: var(--jvcd-text-normal) !important;
+    font-family: Whitney !important;
+    font-weight: 800 !important;
+}
+
+.back-img-msg
+{
+    background: transparent !important;
+    border: 0 !important;
+}
+
+.user-avatar-msg
+{
+    border-radius: 3px;
+}
+
+.bloc-header
+{
+    border-bottom: 0 !important;
+    margin-bottom: 0px !important;
+}
+
+.signature-msg
+{
+    border-top: 3px var(--jvcd-signature-delimiter) solid !important;
+    margin-top: 0 !important;
+}
+
+.info-edition-msg
+{
+    margin-top: 5px !important;
+}
+
+.bloc-outils-bottom
+{
+    border: 0 !important;
+    padding-top: 0 !important;
+}
+
+.jvchat-bloc-avatar
+{
+    box-shadow: none !important;
+}
+
+.jvchat-author
+{
+    color: var(--jvcd-text-white) !important;
+    font-family: Whitney !important;
+    font-weight: 1000 !important;
+}
+
+.jvchat-ruler
+{
+    border-color: transparent !important;
+    margin-top: 15px !important;
+}
+
+.jvchat-reduced,
+#bloc-formulaire-forum
+{
+   margin-bottom: 10px !important; 
+}
+
+#jvchat-post,
+#jvchat-reduce,
+#jvchat-enlarge
+{
+    background: transparent;
+    border: none;
+    color: var(--jvcd-interactive-normal);
+}
+
+#jvchat-post:active,
+#jvchat-post:focus,
+#jvchat-reduce:active,
+#jvchat-reduce:focus,
+#jvchat-enlarge:active,
+#jvchat-enlarge:focus
+{
+    border: 0 !important;
+}
+
+#jvchat-post:hover,
+#jvchat-reduce:hover,
+#jvchat-enlarge:hover
+{
+    color: var(--jvcd-interactive-hover);
+}

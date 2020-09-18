@@ -1,0 +1,54 @@
+/*
+** JVCD2 Plugin File
+** Par : SleepyNeko3
+** Ce fichier n'est pas nécessaire au bon fonctionnement de JVCD2
+** Description : Ici se trouvent des fix graphiques et quelques
+** améliorations inclassables ailleurs.
+*/
+
+.sponsoTab,
+#totalblacklistbar,
+.sideWootbox,
+.form-harassment, /*:noel:*/
+.bloc-harassment-login,
+.jv-nav-harassment-warning,
+.video-footer-container,
+.external-links,
+div.highlight
+{
+    display: none !important;
+}
+
+.jv-nav-dropdown-container-content
+{
+    bottom: 3.5rem !important;
+}
+
+/*Fix du footer sur le login */
+.container-content
+{
+    min-height: 38.4rem !important;
+}
+
+/* Fix de l'icone de notification wtf ? */
+.icon-bell-off
+{
+    background-color: #00000030 !important;
+    color: var(--jvcd-background-primary) !important;
+}
+
+.icon-bell-off:hover
+{
+    background-color: #000000F0 !important;
+}
+
+.icon-bell-off[data-id]
+{
+    color: var(--jvcd-interactive-normal) !important;
+    background: transparent !important;
+}
+
+.icon-bell-off[data-id]:hover
+{
+    color: var(--jvcd-interactive-hover) !important;
+}
