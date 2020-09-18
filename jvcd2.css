@@ -40,6 +40,8 @@
     /*Couleurs des Boutons*/
     --jvcd-button-red: #f04747;
     --jvcd-button-red-hover: #d84040;
+    --jvcd-button-green: #43B581;
+    --jvcd-button-green-hover: #3ca374;
     --jvcd-button-orange: #fd612c;
     --jvcd-button-orange-hover: #F16537;
     --jvcd-button-blue: #7ba1d3;
@@ -524,12 +526,12 @@ body,
     padding-bottom: 5px !important;
     padding-right: 10px !important;
     border-radius: 3px !important;
-    transition: background-color 0.2s ease;
+    transition: background 0.2s ease;
 }
 
 .btn-sondage-reponse:hover
 {
-    background-color: var(--jvcd-button-orange) !important;
+    background: var(--jvcd-button-orange) !important;
 }
 
 .reponse
@@ -614,6 +616,13 @@ body,
     margin-top: 5px !important;
 }
 
+.bloc-outils-bottom
+{
+    border: 0 !important;
+    padding-top: 0 !important;
+}
+
+
 /**** Intégration JVChat */
 .jvchat-bloc-avatar
 {
@@ -665,6 +674,225 @@ body,
     color: var(--jvcd-interactive-hover);
 }
 
+/**** Login Page */
+.bloc-erreur
+{
+    border: 0 !important;
+    font-family: Whitney;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.icon-user,
+.icon-lock
+{
+    color: var(--jvcd-text-muted) !important;
+}
+
+.form-control:focus
+{
+    box-shadow: none;
+}
+
+.bloc-pass-perdu > a
+{
+    float: left !important;
+}
+
+.btn-valid-form
+{
+    text-transform: lowercase !important;
+    background: var(--jvcd-button-green) !important;
+    border-radius: 3px !important;
+    font-family: Whitney;
+    font-size: 16px;
+}
+
+.btn-valid-form:active
+{
+    box-shadow: none !important;
+}
+
+.btn-valid-form:hover
+{
+    background: var(--jvcd-button-green-hover) !important;
+}
+
+.icon-check-jv
+{
+    display: none;
+}
+
+.btn-valid-form::first-letter
+{
+    text-transform: uppercase !important;
+}
+
+/**** Liste topics */
+.topic-list
+{
+    background: var(--jvcd-background-secondary);
+    border-radius: 20px;
+    border: #0000 !important;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#select-all-msg
+{
+    display: none;
+}
+
+.topic-list .topic-head,
+.topic-head .topic-author
+{
+    background: var(--jvcd-background-secondary) !important;
+}
+
+span.topic-author,
+.topic-author.text-user
+{
+    color: var(--jvcd-text-normal) !important;
+}
+
+.panel-jv-forum
+{
+    border-radius: 10px;
+    background: var(--jvcd-background-secondary);
+    color: var(--jvcd-text-normal) !important;
+}
+.panel-jv-forum .panel-heading
+{
+    border-radius: 10px 10px 0 0;
+    background: var(--jvcd-background-tertiary);
+    color: var(--jvcd-text-normal) !important;
+}
+
+.topic-list li:nth-of-type(2n)
+{
+    background: var(--jvcd-background-secondary);
+    color: var(--jvcd-text-normal);
+    font-family: Whitney;
+    font-size: 13px !important;
+}
+
+.topic-list li:nth-of-type(2n+1)
+{
+    background: var(--jvcd-background-tertiary);
+    color: var(--jvcd-text-normal);
+    font-family: Whitney;
+    font-size: 13px !important;
+}
+
+.topic-date a
+{
+    color: var(--text-link);
+}
+
+.lien-jv.topic-title
+{
+    color: var(--text-normal);
+}
+
+/**** 410 :) */
+.text-center
+{
+    color: var(--jvcd-text-normal);
+}
+
+/**** Profil */
+#header-profil
+{
+    height: 9.45rem !important;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    background: var(--jvcd-background-tertiary) !important;
+}
+
+.content-img-avatar
+{
+    background: transparent !important;
+    border: 0 !important;
+}
+
+.content-img-avatar div
+{
+    padding: 1rem !important;
+}
+.content-img-avatar div img
+{
+    border-radius: 50%;
+    height: 100px;
+}
+
+.infos-pseudo
+{
+    margin-top: 3rem !important;
+}
+
+.bloc-option-profil
+{
+    margin-top: 3.5rem !important;
+    margin-right: 3rem;
+}
+
+#page-profil .container
+{
+    padding-top: 5px !important;
+    padding: 0;
+}
+
+.menu-profil
+{
+    margin-left: 0 !important;
+    background: var(--jvcd-background-tertiary) !important;
+    padding-left: 15px !important;
+    border: 0 !important;
+}
+
+.lien-profil
+{
+    font-family: Whitney !important;
+    font-weight: 1000 !important;
+    text-transform: none !important;
+    font-size: 16px !important;
+}
+
+.lien-profil:hover
+{
+    color: var(--jvcd-interactive-normal) !important;
+}
+
+.list-menu-profil li
+{
+    margin-right: 20px !important;
+}
+
+.lien-profil.actif
+{
+    color: var(--jvcd-text-white) !important;
+}
+
+.lien-profil.actif::after
+{
+    color: transparent;
+}
+
+.lien-profil.actif::before
+{
+    background: var(--jvcd-text-white) !important;
+    bottom: .5rem !important;
+}
+
+.reglages-profil
+{
+    right: 10px !important;
+}
+
+.picto-crayon
+{
+    background-color: white !important;
+}
+
 /**** Extras */
 .sponsoTab,
 #totalblacklistbar,
@@ -700,4 +928,15 @@ div.highlight
 .icon-bell-off:hover
 {
     background-color: #000000F0 !important;
+}
+
+.icon-bell-off[data-id]
+{
+    color: var(--jvcd-interactive-normal) !important;
+    background: transparent !important;
+}
+
+.icon-bell-off[data-id]:hover
+{
+    color: var(--jvcd-interactive-hover) !important;
 }
