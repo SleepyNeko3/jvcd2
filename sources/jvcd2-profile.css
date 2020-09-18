@@ -95,5 +95,5 @@
 
 .picto-crayon
 {
-    background-color: white !important;
+    background-color: var(--jvcd-text-bright) !important;
 }

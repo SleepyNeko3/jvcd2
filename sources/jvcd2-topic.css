@@ -170,3 +170,8 @@
 {
     color: var(--jvcd-interactive-hover);
 }
+
+.bloc-pre-right
+{
+    top: 0 !important;
+}
