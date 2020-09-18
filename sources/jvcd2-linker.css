@@ -6,7 +6,7 @@
 ** Il ne doit être appellé que dans jvcd2-install.css
 */
 
-@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-extrnal.css");    /*Ressources Externes*/
+@import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-external.css");    /*Ressources Externes*/
 @import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-variables.css");  /*Généralisation des variables*/
 /* Mettre les plugins en dessous */
 @import url("https://sleepyneko3.github.io/jvcd2/sources/jvcd2-backgrounds.css");/*Arrière plans*/
